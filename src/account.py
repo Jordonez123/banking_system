@@ -1,4 +1,4 @@
-from src.src.banking_system.exceptions import CustomError
+from exceptions import CustomError
 
 class Account:
     def __init__(self, account_number: int, balance=0):

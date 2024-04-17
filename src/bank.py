@@ -1,6 +1,6 @@
-from  src.src.banking_system.account import Account
+from  account import Account
 from collections import defaultdict
-from src.src.banking_system.exceptions import CustomError
+from exceptions import CustomError
 class Bank:
     def __init__(self) -> None:
         self.accounts_dictionary = defaultdict(int)

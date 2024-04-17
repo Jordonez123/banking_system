@@ -1,7 +1,6 @@
 import unittest
-import os
-print("current wd:", os.getcwd())
-print()
+
+from banking_system.account import Account
 class TestAccount(unittest.TestCase):
     def setUp(self) -> None:
         self.account = Account(account_number=123, balance=20)
