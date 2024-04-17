@@ -1,11 +1,12 @@
-from src.banking_system.banking_system.exceptions import CustomError
+from src.src.banking_system.exceptions import CustomError
 
 class Account:
-    def __init__(self, account_number: int, balance: int):
+    def __init__(self, account_number: int, balance=0):
         self.account_number = account_number
-        self.balance = 0
+        self.balance = balance
 
     def deposit(self, amount: int) -> None:
+        # need to check that deposit is > 0!
         self.balance += amount
         return
     
